@@ -1,0 +1,20 @@
+body {
+    background-color: black;
+    color: rgb(195, 52, 231);
+    text-align: center;
+    padding: 50px;
+    font-size: 20pt;
+    font-weight: bold;
+}
+
+.task {
+    color: rgb(220, 47, 255);
+    font-size: 16pt;
+    text-align: center;
+    width: 500px;
+    border: 1px solid rgb(124, 19, 221);
+    background-color: rgb(142, 69, 209);
+    margin: 10px auto;
+    padding: 30px;
+    border-radius: 10px;
+}

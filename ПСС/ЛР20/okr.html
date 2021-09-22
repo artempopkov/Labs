@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background: rgb(159,180,255);
+        background: linear-gradient(0deg, rgba(159,180,255,1) 0%, rgba(215,80,232,1) 100%, rgba(0,212,255,1) 100%);
+        background-repeat: no-repeat;
+        width: 1920px;
+        height: 1080px;
+    }
+    a {
+        text-decoration: none;
+        font-size: 30px;
+        color:white;
+    }
+    .dv{
+        margin-left: 40%;
+    }
+    p{
+        font-size: 20px;
+        color: white;
+    }
+</style>
+<body>
+    <div class="dv">
+        <a href="#" onclick="func()">Нажми сюда</a> <br>
+        <input type="text" value="" id="result">
+        <p id="p"></p>
+    </div>
+</body>   
+<script type="text/javascript">
+        var inp = document.getElementById('result');
+        var a = document.getElementsByTagName('a');
+        var count = 0;
+        function func() {
+            var today = new Date();
+            var time ="Время: " + today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds() + ", Дата: "+ today.getDay() + "\\" + today.getMonth() + "\\" + today.getFullYear();
+            document.getElementById('p').innerHTML = time
+            count++;
+            inp.value = count;
+            return false;
+        } 
+</script>
+</html>
